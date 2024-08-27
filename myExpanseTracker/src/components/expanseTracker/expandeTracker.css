@@ -1,0 +1,12 @@
+.window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-left: 100px; 
+    padding-right: 100px; 
+}
+
+.container{
+    max-width: 300vh;   
+}
