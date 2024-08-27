@@ -1,0 +1,63 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    transition: text-decoration 0.3s ease;
+
+    p {
+        flex: 1;
+        margin-left: 10px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &.completed {
+            text-decoration: line-through;
+            color: #999; /* Change text color for completed tasks */
+        }
+    }
+
+    .checkbox-container {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-color: #ccc;
+        }
+
+        input:checked ~ .checkmark {
+            background-color: #007bff; 
+        }
+
+        .checkmark:after {
+            content: '';
+            position: absolute;
+            display: none;
+        }
+    }
+
+    button {
+        background-color: #ccc;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #999;
+        }
+    }
+}
