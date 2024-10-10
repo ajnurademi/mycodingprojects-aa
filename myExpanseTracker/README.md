@@ -15,4 +15,3 @@ Eine praktische Anwendung zur Verfolgung und Verwaltung deiner Ausgaben. Halte d
 ## 🌐 Live Demo
 
 Besuche die Live-Demo hier: [myExpenseTracker Demo](https://dein-live-demo-link.com) <-- is in **PROGRESS**
-

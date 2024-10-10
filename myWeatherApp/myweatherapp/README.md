@@ -17,4 +17,3 @@ Eine einfache und elegante Wetteranwendung, die aktuelle Wetterdaten für versch
 ## 🌐 Live Demo
 
 Besuche die Live-Demo hier: [myWeatherApp Demo](https://dein-live-demo-link.com) <-- is in **PROGRESS**
-
