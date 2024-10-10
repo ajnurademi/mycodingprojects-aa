@@ -1,8 +1,18 @@
-# React + Vite
+# 💰 myExpenseTracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Eine praktische Anwendung zur Verfolgung und Verwaltung deiner Ausgaben. Halte den Überblick über deine Finanzen und optimiere dein Budget.
 
-Currently, two official plugins are available:
+## 🚀 Funktionen
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Echtzeit-Ausgabenverfolgung:** Füge Ausgaben hinzu und verwalte deine Finanzen effizient.
+- **Benutzerfreundliches Design:** Eine intuitive Oberfläche für eine optimale Benutzererfahrung.
+- **Budgetplanung:** Setze Budgets und überprüfe deine Ausgaben in verschiedenen Kategorien.
+
+## 📦 Technologien
+
+- **Frontend:** React
+
+## 🌐 Live Demo
+
+Besuche die Live-Demo hier: [myExpenseTracker Demo](https://dein-live-demo-link.com) <-- is in **PROGRESS**
+
