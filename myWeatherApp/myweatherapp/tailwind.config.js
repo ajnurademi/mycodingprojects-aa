@@ -6,13 +6,8 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    },
     colors: {
+      'white': '#ffffff',
       'blue': '#1fb6ff',
       'gray-light': '#d3dce6',
     },
