@@ -15,6 +15,10 @@ Here are some of the projects that I've built so far:
 3. **📝 MyTodoApp**  
    A handy to-do list app to organize your tasks and increase productivity. Add, edit, and check off tasks as you accomplish them!
 
+
+3. **🌤️ MyWeatherApp**  
+   An elegant weather application that provides current weather updates for any location. Stay informed about temperature, humidity, and other weather conditions with a clean and user-friendly interface!
+
 ---
 
 ## 🌱 Ongoing and Future Projects
