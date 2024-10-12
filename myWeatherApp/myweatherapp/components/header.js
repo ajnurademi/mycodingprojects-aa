@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <>
-      <div className="lg:w-full lg:h-[5vh] flex justify-between items-center px-8 py-2">
+      <div className="lg:w-full lg:h-[5vh] flex justify-between items-center px-8 py-2 mt-">
         <div className="flex items-center"> 
           <img 
             src="/location.svg" 
