@@ -3,6 +3,13 @@ import React, { useState } from 'react';
 
 export const Header = () => {
   const [showSearch, setShowSearch] = useState(false);
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      console.log('Suchwert:', searchValue); 
+    }
+  };
 
   return (
     <>
@@ -22,6 +29,9 @@ export const Header = () => {
                 <input
                   className="rounded-md pl-2 pr-16 py-1 text-sm"
                   placeholder="e.x. London"
+                  value={searchValue}
+                  onChange={(e) => setSearchValue(e.target.value)} 
+                  onKeyDown={handleKeyDown} 
                 />
               </div>
             </div>

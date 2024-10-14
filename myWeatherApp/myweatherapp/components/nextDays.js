@@ -5,7 +5,7 @@ export const NextDays = () => {
   return (
     <>
       <div className="container">
-        <div className="flex justify-center items-center text-white font-medium text-sm bg-[#1b4074] rounded-2xl lg:p-4 lg:my-5 lg:mx-4 md:p-4 md:my-2 md:mx-1 sm:p-4 sm:mx-4 ">
+        <div className="flex justify-center items-center text-white font-medium text-sm bg-[#1b4074] rounded-2xl lg:p-4 lg:my-5 lg:mx-4 md:p-4 md:my-2 md:mx-4 sm:p-4 sm:mx-4 ">
           <section className="lg:mx-4 md:mx-3 flex justify-center items-center">
             <img src="/rain.svg" alt="rain_icon" className="mx-2" />
             <p>6%</p>
