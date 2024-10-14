@@ -13,12 +13,22 @@
   }
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
+* {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
   background: linear-gradient(to bottom right, #08244F 0%, #134CB5 47%, #0B42AB 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @layer utilities {
