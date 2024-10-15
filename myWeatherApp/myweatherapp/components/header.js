@@ -1,13 +1,26 @@
 "use client";
 import React, { useState } from 'react';
 
-export const Header = () => {
+export const Header = ({ onSearch }) => {
   const [showSearch, setShowSearch] = useState(false);
   const [searchValue, setSearchValue] = useState('');
+  const [locationName, setLocationName] = useState('Location'); 
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = async (event) => {
     if (event.key === 'Enter') {
-      console.log('Suchwert:', searchValue); 
+      console.log('Suchwert:', searchValue);
+      const geoQuery = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${searchValue}&limit=1&appid=${process.env.NEXT_PUBLIC_API_KEY}`);
+      const geoResponse = await geoQuery.json();
+
+      if (geoResponse.length > 0) {
+        const { lat, lon, name } = geoResponse[0]; 
+        console.log('Geocodierte Koordinaten:', lat, lon);
+        setLocationName(name); 
+        onSearch(lat, lon); 
+      } else {
+        console.error('Keine Ergebnisse für diese Stadt gefunden');
+        setLocationName('Location'); 
+      }
     }
   };
 
@@ -20,7 +33,7 @@ export const Header = () => {
             alt="location_icon"
             className="h-6 w-auto text-white"
           />
-          <h1 className="font-medium text-white ml-2">Location</h1>
+          <h1 className="font-medium text-white ml-2">{locationName}</h1> 
         </div>
         <div className="relative flex items-center">
           {showSearch && (
@@ -30,8 +43,8 @@ export const Header = () => {
                   className="rounded-md pl-2 pr-16 py-1 text-sm"
                   placeholder="e.x. London"
                   value={searchValue}
-                  onChange={(e) => setSearchValue(e.target.value)} 
-                  onKeyDown={handleKeyDown} 
+                  onChange={(e) => setSearchValue(e.target.value)}
+                  onKeyDown={handleKeyDown}
                 />
               </div>
             </div>
