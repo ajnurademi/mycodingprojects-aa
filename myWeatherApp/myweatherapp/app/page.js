@@ -36,7 +36,6 @@ export default function Home() {
 
         setForecasts(response.list.slice(0, 3));
 
-        // Regen, Luftfeuchtigkeit und Windgeschwindigkeit abrufen
         const rainProcent = currentWeather.rain
           ? currentWeather.rain["1h"] || 0
           : 0;
@@ -66,7 +65,7 @@ export default function Home() {
 
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <div className="lg:w-[43.75rem] lg:h-[54.38rem] md:w-[40rem] md:h-[53rem] sm:w-[35rem] sm:h-[30rem] flex flex-col items-center justify-center border-dashed border-4 border-white bg-white/10 backdrop-blur-lg rounded-[3vh]">
+      <div className="lg:w-[43.75rem] lg:h-[54.38rem] md:w-[40rem] md:h-[53rem] sm:w-[35rem] sm:h-[30rem] flex flex-col items-center justify-center border-dashed border-4 border-white bg-white/10 backdrop-blur-lg rounded-[3vh] m-20">
         <Header onSearch={handleSearch} />
         <Hero
           currentTemp={currentTemp}
