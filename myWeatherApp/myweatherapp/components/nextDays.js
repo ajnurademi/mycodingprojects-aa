@@ -25,7 +25,6 @@ export const NextDays = ({
           </section>
         </div>
       </div>
-
       <div className="container">
         <div className="text-white font-medium text-sm p-4 my-5 mx-4 bg-[#1b4074] rounded-2xl">
           <h1 className="text-left mb-6">Next Forecasts</h1>
